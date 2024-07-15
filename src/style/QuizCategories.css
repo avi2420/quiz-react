@@ -1,0 +1,149 @@
+body {
+  background-color: #f5f3f3;
+  font-family: Arial, sans-serif;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+  gap: 20px; /* Add space between columns */
+}
+
+.content-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.content-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-heading {
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.content-paragraph {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.content-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #f40505;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content-button:hover {
+  background-color: #ff7e33;
+}
+
+.quiz-categories {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #ff69b4;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.nav-link i {
+  margin-right: 5px;
+}
+
+.header {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #d2a4f6;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 300px; /* Set a fixed height */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Ensure content is evenly spaced */
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.category-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px; /* Set a maximum height for the image */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.category-name {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+      grid-template-columns: 1fr;
+      text-align: center; /* Center text on smaller screens */
+  }
+  
+  .category-box {
+      flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .category-box {
+      flex: 1 1 100%;
+  }
+}

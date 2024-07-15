@@ -1,0 +1,98 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e94e4e;
+    color: #fff;
+    padding: 20px;
+}
+
+.navbar-logo {
+    flex: 1;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center; 
+    text-align: center; 
+    height: 50px;
+    background: transparent;
+    margin-left: 150px;
+}
+.navbar-auth {
+    flex: 1;
+    text-align: right;
+}
+
+.btn-login {
+    background-color: #ed1414;
+    color: #efe9e9;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+}
+.btn-Signup {
+    background-color: #fcfbfb;
+    color: #dd5252 ;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    margin-right: 180px;
+}
+.navbar-toggle {
+    display: block;
+    cursor: pointer;
+    margin-left: 200px;
+    font-size: xx-large;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    background-color: #ed2e2e;
+    padding-top: 5px;  
+    z-index: 1000;
+    transform: translateX(-200px);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+.sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.close-icon {
+    color: #fff;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+
+.sidebar-link {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+ 
+.sidebar-link:hover {
+    background-color: #fbf7f7; /* The background color of the navbar */
+    color: #f02020; /* The color of the sidebar background */
+}
